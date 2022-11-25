@@ -1,0 +1,516 @@
+/* -------- Спецификая ---------- */
+@font-face {
+    font-family: 'Lifehack';
+    src: local('Lifehack Bold'), local('Lifehack-Bold'),
+        url('..//fonts/Lifehack-Bold.woff2') format('woff2'),
+        url('..//fonts/Lifehack-Bold.woff') format('woff'),
+        url('..//fonts/Lifehack-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    font-family: Tahoma, Arial, sans-serif;
+    color: #000000;
+    padding: 0;
+    margin: 0;
+
+}
+
+.container {
+    border: 2px solid red;
+    margin: 0 auto;
+}
+
+div,
+p,
+form,
+input,
+span,
+button,
+a {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-weight: 400;
+}
+
+ul,
+li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.btn {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: tahoma;
+    font-size: 13px;
+    max-width: 218px;
+    width: 100%;
+    border: 1px solid #fff;
+    border-radius: 27px;
+    padding: 20px 0 19px;
+    background: #2D63EB;
+    color: #fff;
+
+}
+
+
+/* --------Первая СЕкция -------*/
+
+.header-section {
+    background: linear-gradient(#4A7DFC 0%, #1148D3 100%);
+    color: #fff;
+
+}
+
+.header-container {
+    width: 578px;
+    margin: 0 auto;
+    border: 2px red solid;
+
+
+
+}
+
+.header-logo {
+    display: flex;
+    justify-content: center;
+    font-family: Lifehack;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    padding-top: 59px;
+    margin-bottom: 135px;
+}
+
+
+.header-start {
+    width: 578px;
+    text-align: center;
+}
+
+.header-start__title {
+    font-size: 27px;
+
+}
+
+.header-button__callme {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: tahoma;
+    font-size: 13px;
+    max-width: 218px;
+    width: 100%;
+    margin-top: 73px;
+    color: #fff;
+    background: linear-gradient(#4A7DFC -20%, #1148D3 120%);
+    border: 1px solid #fff;
+    border-radius: 27px;
+    padding: 20px 0 19px;
+    margin-bottom: 137px;
+    margin-left: 180px;
+
+}
+
+.header-button__callme a {
+    color: #fff;
+    text-decoration: none;
+
+}
+
+
+.btn:hover {
+    text-decoration: underline;
+    border: 1px solid #1148D3;
+    cursor: pointer;
+    /* border-bottom: 1px solid #1148D3; */
+
+
+}
+
+
+.header-check {
+    margin-bottom: 49px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.header-check__title:hover {}
+
+/* Вторая секция */
+
+.me-section {}
+
+.me-section__container {
+    margin: 0 auto;
+    width: 1101px;
+    border: 2px red solid;
+}
+
+.me-section__aboutme {}
+
+.me-section__aboutme-title {
+    font-size: 26px;
+    text-align: center;
+    margin-top: 130px;
+
+}
+
+.me-section__mission {
+    width: 669px;
+    margin-top: 141px;
+    margin-left: 22px;
+    padding-right: 410px;
+
+}
+
+.me-section__mission-title {}
+
+.wrap {
+    display:flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.me-section__mission-title::before {
+    content: "";
+    border-bottom: 2px solid #2D63EB;
+    width: 117px;
+    display: inline-block;
+    margin-right: -104px;
+    margin-bottom: -13px;
+    margin-left: -22px;
+}
+
+.me-section_text {
+    width: 669px;
+
+}
+
+.me-section_text1 {
+    margin-top: 58px;
+    padding-bottom: 28px;
+    font-size: 15px;
+
+}
+
+.me-section_text2 {
+    font-size: 15px;
+}
+
+.colortext {
+    color: #2D63EB;
+    text-decoration-line: underline;
+}
+
+.me-section__history {
+    width: 280px;
+    margin-top: 136px;
+    
+    /* margin-bottom: 184px; */
+    
+}
+
+.me-section__history-title {}
+
+
+.me-section__history-title::before {
+    content: "";
+    border-bottom: 2px solid #2D63EB;
+    width: 117px;
+    display: inline-block;
+
+}
+
+.me-section__history-icons {
+    margin-top: 45px;
+}
+
+.me-section__history-icon {
+    font-size: 16px;
+    color: #2D63EB;
+    width: 52px;
+    height: 52px;
+    background: #2D63EB;
+    border-radius: 10px;
+    margin-bottom: 22px;
+
+}
+
+.me-section__history-picturetitle {
+    margin-left: 83px;
+
+}
+
+
+
+.me-section__history-picture1 {
+    padding: 8px 8px 9px 9px;
+
+}
+
+.me-section__history-picture2 {
+    padding: 9px 10px 8px 11px;
+}
+
+.me-section__history-picture3 {
+    padding: 8px 15px 9px 15px;
+
+}
+
+.me-section__history-picture4 {
+    padding: 11px 8px 10px 9px;
+
+}
+
+/* Третья секция */
+
+.ithink-section {
+    background: #E6E9F1;
+
+}
+
+.ithink-container {
+    margin: 0 auto;
+    width: 417px;
+    text-align: center;
+    padding-top: 130px;
+
+}
+
+.ithink-title {
+    margin-bottom: 50px;
+
+}
+
+.ithink-text {
+    margin-bottom: 50px;
+    font-size: 14px;
+
+}
+
+.ithink-buttom {
+    margin-bottom: 130px;
+    border: 1px solid #2D63EB;
+}
+
+.btn:hover {
+    text-decoration: underline;
+    border: 1px solid #0849ec;
+    cursor: pointer;
+
+}
+
+/* третья секция нижний элемент */
+
+.whyme  {
+    width: 695px ;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 153px;
+    
+}
+
+.whyme__title{
+    font-size: 26px;
+    padding-right: 17px;
+
+}
+
+.reasons{
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    /* margin-left: -245px; */
+    padding-bottom: 130px;
+    
+
+}
+
+.reason1{
+
+}
+.reason1__icon{
+    margin: 86px 193px 42px 43px;
+    /* margin-bottom: 42px; */
+    /* padding: 43px 86px 577px 34px; */
+    /* padding-bottom: 64px; */
+    /* padding-left: 43px; */
+    width: 75px;
+    height: 75px;
+
+    
+  
+}
+
+
+.why__number-1{
+    font-size: 30px;
+    border: 1px solid #FFA200;
+    border-radius: 50%;
+    padding: 20px 29px 19px 29px;
+    color: #FFA200;
+
+}
+.reason1__text{
+
+}
+.reason__text{
+    font-weight: 700;
+    font-size: 19px;
+
+}
+.reason2{
+
+}
+
+.reason2__icon{
+    width: 75px;
+    height: 75px;
+    margin: 86px 169px 42px 65px;
+
+}
+.why__number-2{
+    font-size: 30px;
+    border: 1px solid #FFA200;
+    border-radius: 50%;
+    padding: 20px 29px 19px 29px;
+    color: #fff;
+    background: #FFA200;
+
+}
+.reason2__text{
+
+}
+.reason__text{
+
+}
+.reason3{
+
+}
+.reason3__icon{
+    width: 75px;
+    height: 75px;
+    margin: 83px 65px 45px 169px;
+
+}
+.why__number-3{
+    font-size: 30px;
+
+}
+.reason3__text{
+
+}
+.reason__text{
+
+}
+
+
+
+
+
+
+
+
+/* Подвал */
+
+
+.footer-section {
+    background: #06319E;
+
+
+}
+
+.footer-container {
+    margin: 0 auto;
+    width: 1067px;
+    padding: 52px 0 43px;
+
+
+
+
+}
+
+.footer {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.footer-text__one {}
+
+
+.footer-text__one a {
+    text-decoration: none;
+    /* Убираем подчеркивание у ссылок */
+    color: #FFFFFF80;
+    /* Цвет ссылки */
+}
+
+.footer-text__one a:hover {
+    text-decoration: underline;
+    color: #FFFFFF80;
+    /* Цвет ссылки */
+    /* Добавляем подчеркивание при наведении курсора мыши на ссылку */
+}
+
+.footer-text__two {
+    margin-left: 89px;
+}
+
+.footer-text__two a {
+    text-decoration: none;
+    /* Убираем подчеркивание у ссылок */
+    color: #FFFFFF80;
+
+}
+
+.footer-text__two a:hover {
+    text-decoration: underline;
+    color: #FFFFFF80;
+
+}
+
+.footer-text__three {
+    color: #FFFFFF;
+    border-bottom: 1px dashed #fff;
+    width: 267px;
+    text-align: center;
+}
+
+.footer-text__three a {
+    text-decoration: none;
+    /* Убираем подчеркивание у ссылок */
+    color: #FFF;
+}
+
+.footer-text__three a:hover {
+    text-decoration: underline;
+    color: #FFFF;
+    /* Цвет ссылки */
+    /* Добавляем подчеркивание при наведении курсора мыши на ссылку */
+}
