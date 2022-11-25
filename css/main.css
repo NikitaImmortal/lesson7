@@ -151,7 +151,6 @@ li {
 
 
 .header-check {
-    margin-bottom: 49px;
     text-align: center;
     cursor: pointer;
 }
@@ -172,7 +171,7 @@ li {
 .me-section__aboutme-title {
     font-size: 26px;
     text-align: center;
-    margin-top: 130px;
+    /* margin-top: 130px; */
 
 }
 
@@ -399,9 +398,9 @@ li {
 }
 
 .ithink {
-    padding-bottom: 130px;
+    /* padding-bottom: 130px;
 
-    padding-top: 130px;
+    padding-top: 130px; */
 
 }
 
