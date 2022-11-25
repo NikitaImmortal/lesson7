@@ -18,6 +18,7 @@ body {
 }
 
 .container {
+    width: 1101px;
     border: 2px solid red;
     margin: 0 auto;
 }
@@ -81,15 +82,14 @@ li {
 .header-section {
     background: linear-gradient(#4A7DFC 0%, #1148D3 100%);
     color: #fff;
-
+    align-items: center;
+    justify-content: space-between;
+    
+    
 }
 
-.header-container {
-    width: 578px;
-    margin: 0 auto;
-    border: 2px red solid;
 
-
+.header {
 
 }
 
@@ -160,13 +160,11 @@ li {
 
 /* Вторая секция */
 
-.me-section {}
-
-.me-section__container {
-    margin: 0 auto;
-    width: 1101px;
-    border: 2px red solid;
+.me-section {
+    padding-top: 130px;
 }
+
+
 
 .me-section__aboutme {}
 
@@ -226,7 +224,7 @@ li {
 
 .me-section__history {
     width: 280px;
-    margin-top: 136px;
+    margin-top: 0px;
     
     /* margin-bottom: 184px; */
     
@@ -286,50 +284,15 @@ li {
 
 /* Третья секция */
 
-.ithink-section {
-    background: #E6E9F1;
 
-}
 
-.ithink-container {
-    margin: 0 auto;
-    width: 417px;
-    text-align: center;
+
+.whyme-section{
     padding-top: 130px;
 
 }
+.whyme{
 
-.ithink-title {
-    margin-bottom: 50px;
-
-}
-
-.ithink-text {
-    margin-bottom: 50px;
-    font-size: 14px;
-
-}
-
-.ithink-buttom {
-    margin-bottom: 130px;
-    border: 1px solid #2D63EB;
-}
-
-.btn:hover {
-    text-decoration: underline;
-    border: 1px solid #0849ec;
-    cursor: pointer;
-
-}
-
-/* третья секция нижний элемент */
-
-.whyme  {
-    width: 695px ;
-    margin: 0 auto;
-    text-align: center;
-    padding-top: 153px;
-    
 }
 
 .whyme__title{
@@ -426,6 +389,43 @@ li {
 
 }
 
+/* 4 секция нижний элемент */
+
+.ithink-section {
+    background: #E6E9F1;
+
+}
+
+.ithink {
+    padding-bottom: 130px;
+
+    padding-top: 130px;
+
+}
+
+.ithink-title {
+    margin-bottom: 50px;
+
+}
+
+.ithink-text {
+    margin-bottom: 50px;
+    font-size: 14px;
+
+}
+
+.ithink-buttom {
+    margin-bottom: 0px;
+    border: 1px solid #2D63EB;
+}
+
+.btn:hover {
+    text-decoration: underline;
+    border: 1px solid #0849ec;
+    cursor: pointer;
+
+}
+
 
 
 
@@ -438,28 +438,23 @@ li {
 
 .footer-section {
     background: #06319E;
+    
 
 
 }
 
-.footer-container {
-    margin: 0 auto;
-    width: 1067px;
-    padding: 52px 0 43px;
 
-
-
-
-}
 
 .footer {
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 52px 0 43px 0px;
 
 
 }
+
 
 .footer-text__one {}
 
