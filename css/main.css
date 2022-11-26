@@ -19,7 +19,6 @@ body {
 
 .container {
     width: 1101px;
-    border: 2px solid red;
     margin: 0 auto;
 }
 
@@ -73,7 +72,6 @@ li {
     padding: 20px 0 19px;
     background: #2D63EB;
     color: #fff;
-
 }
 
 
@@ -85,18 +83,18 @@ li {
     align-items: center;
     justify-content: space-between;
     padding: 59px 0 47px;
-    
-    
 }
 
-
 .header {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    flex-direction: column;
+    text-align: center;
 
 }
 
 .header-logo {
-    display: flex;
-    justify-content: center;
     font-family: Lifehack;
     font-style: normal;
     font-weight: 700;
@@ -107,7 +105,6 @@ li {
 
 .header-start {
     width: 578px;
-    text-align: center;
 }
 
 .header-start__title {
@@ -129,7 +126,6 @@ li {
     border-radius: 27px;
     padding: 20px 0 19px;
     margin-bottom: 137px;
-    margin-left: 180px;
 
 }
 
@@ -138,20 +134,14 @@ li {
     text-decoration: none;
 
 }
-
-
 .btn:hover {
     text-decoration: underline;
     border: 1px solid #1148D3;
     cursor: pointer;
     /* border-bottom: 1px solid #1148D3; */
-
-
 }
 
-
 .header-check {
-    text-align: center;
     cursor: pointer;
 }
 
@@ -160,45 +150,42 @@ li {
 /* Вторая секция */
 
 .me-section {
-    padding: 130px 0 153px;
+    padding: 130px 0 72px;
 
 }
-
-
-
 .me-section__aboutme {}
 
 .me-section__aboutme-title {
     font-size: 26px;
     text-align: center;
     /* margin-top: 130px; */
+    margin-bottom: 141px;
 
 }
 
 .me-section__mission {
     width: 669px;
-    margin-top: 141px;
-    margin-left: 22px;
-    padding-right: 410px;
-
 }
 
-.me-section__mission-title {}
-
-.wrap {
-    display:flex;
-    gap: 1rem;
-    justify-content: space-between;
+.me-section__title {
+    position: relative;
+    padding-bottom: 14px;
 }
 
-.me-section__mission-title::before {
+.me-section__title::before {
     content: "";
     border-bottom: 2px solid #2D63EB;
     width: 117px;
     display: inline-block;
-    margin-right: -104px;
-    margin-bottom: -13px;
-    margin-left: -22px;
+    position: absolute;
+    bottom: 0;
+    left: -22px;
+}
+
+.me-section__wrap {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
 }
 
 .me-section_text {
@@ -221,197 +208,189 @@ li {
     color: #2D63EB;
     text-decoration-line: underline;
 }
-
+/* Секция Истории */
 .me-section__history {
-    width: 280px;
-    margin-top: 0px;
-    
-    /* margin-bottom: 184px; */
-    
+    max-width: 263px;
+    width: 100%;
 }
 
-.me-section__history-title {}
-
-
-.me-section__history-title::before {
-    content: "";
-    border-bottom: 2px solid #2D63EB;
-    width: 117px;
-    display: inline-block;
-
+.me-section__history-title {
+    margin-bottom: 45px;
 }
+
+.me-section__title {}
 
 .me-section__history-icons {
     margin-top: 45px;
-}
 
+}
 .me-section__history-icon {
-    font-size: 16px;
-    color: #2D63EB;
-    width: 52px;
-    height: 52px;
-    background: #2D63EB;
-    border-radius: 10px;
-    margin-bottom: 22px;
-
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 20px;
 }
-
-.me-section__history-picturetitle {
-    margin-left: 83px;
-
-}
-
-
 
 .me-section__history-picture1 {
     padding: 8px 8px 9px 9px;
+    width: 36px;
+    height: 35px;
+    background: #2D63EB;
+    border-radius: 10px;
+}
+
+
+.me-section__history-icontitlestexts {
+
+    width: 195px;
+
+}
+
+.me-section__history-title {
+    font-weight: 700;
+    font-size: 16px;
+    color: #2D63EB;
+    display: contents;
+
+}
+
+.me-section__history-text {
+    color: #2F383B7A;
+    font-size: 15px;
+    margin-top: 8px;
 
 }
 
 .me-section__history-picture2 {
     padding: 9px 10px 8px 11px;
+    width: 31px;
+    height: 36px;
+    background: #2D63EB;
+    border-radius: 10px;
+
 }
 
 .me-section__history-picture3 {
     padding: 8px 15px 9px 15px;
-
+    width: 22px;
+    height: 36px;
+    background: #2D63EB;
+    border-radius: 10px;
 }
 
 .me-section__history-picture4 {
     padding: 11px 8px 10px 9px;
+    width: 36px;
+    height: 31px;
+    background: #2D63EB;
+    border-radius: 10px;
 
 }
 
 /* Третья секция */
 
-
-
-
-.whyme-section{
-    padding: 153px 0 130px;
-
-}
-.whyme{
-
+.whyme-section {
+    padding: 71px 0 130px;
 }
 
-.whyme__title{
+
+.whyme {}
+
+.whyme__title {
     font-size: 26px;
-    padding-right: 17px;
+    text-align: center;
+    margin-bottom: 55px;
+
 
 }
 
-.reasons{
-    justify-content: space-evenly;
+.reasons {
+    justify-content: space-between;
     align-items: center;
     display: flex;
-    /* margin-left: -245px; */
-    padding-bottom: 130px;
-    
-
 }
 
-.reason1{
-
-}
-.reason1__icon{
-    margin: 86px 193px 42px 43px;
-    /* margin-bottom: 42px; */
-    /* padding: 43px 86px 577px 34px; */
-    /* padding-bottom: 64px; */
-    /* padding-left: 43px; */
+.reason__number {
     width: 75px;
     height: 75px;
-
-    
-  
-}
-
-
-.why__number-1{
     font-size: 30px;
     border: 1px solid #FFA200;
     border-radius: 50%;
-    padding: 20px 29px 19px 29px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #FFA200;
-
-}
-.reason1__text{
-
-}
-.reason__text{
-    font-weight: 700;
-    font-size: 19px;
-
-}
-.reason2{
-
+    background: #FFF;
+    margin-inline: auto;
 }
 
-.reason2__icon{
-    width: 75px;
-    height: 75px;
-    margin: 86px 169px 42px 65px;
-
-}
-.why__number-2{
-    font-size: 30px;
+.reason__number:hover {
+    text-decoration: none;
     border: 1px solid #FFA200;
-    border-radius: 50%;
-    padding: 20px 29px 19px 29px;
-    color: #fff;
+    cursor: pointer;
     background: #FFA200;
+    color: #FFF;
+}
+
+.reason {
+    max-width: 161px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.reason__text {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.reason2 {
+    max-width: 187px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reason2__icon {}
+
+.reason3 {
+    max-width: 206px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
-.reason2__text{
 
-}
-.reason__text{
-
-}
-.reason3{
-
-}
-.reason3__icon{
-    width: 75px;
-    height: 75px;
-    margin: 83px 65px 45px 169px;
-
-}
-.why__number-3{
-    font-size: 30px;
-
-}
-.reason3__text{
-
-}
-.reason__text{
-
-}
+.reason3__icon {}
 
 /* 4 секция нижний элемент */
 
 .ithink-section {
     background: #E6E9F1;
     padding: 130px 0 130px;
-
 }
 
 .ithink {
-    /* padding-bottom: 130px;
-
-    padding-top: 130px; */
-
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    
 }
 
 .ithink-title {
     margin-bottom: 50px;
+    font-size: 26px;
 
 }
 
 .ithink-text {
     margin-bottom: 50px;
     font-size: 14px;
+    width: 417px;
 
 }
 
@@ -426,23 +405,10 @@ li {
     cursor: pointer;
 
 }
-
-
-
-
-
-
-
-
 /* Подвал */
-
-
 .footer-section {
     background: #06319E;
     padding: 52px 0 38px;
-    
-
-
 }
 
 
@@ -450,11 +416,6 @@ li {
 .footer {
     color: #fff;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-
-
 }
 
 
@@ -463,20 +424,16 @@ li {
 
 .footer-text__one a {
     text-decoration: none;
-    /* Убираем подчеркивание у ссылок */
     color: #FFFFFF80;
-    /* Цвет ссылки */
 }
 
 .footer-text__one a:hover {
     text-decoration: underline;
     color: #FFFFFF80;
-    /* Цвет ссылки */
-    /* Добавляем подчеркивание при наведении курсора мыши на ссылку */
 }
 
 .footer-text__two {
-    margin-left: 89px;
+    margin-left: 328px;
 }
 
 .footer-text__two a {
@@ -489,7 +446,6 @@ li {
 .footer-text__two a:hover {
     text-decoration: underline;
     color: #FFFFFF80;
-
 }
 
 .footer-text__three {
@@ -497,6 +453,7 @@ li {
     border-bottom: 1px dashed #fff;
     width: 267px;
     text-align: center;
+    margin-left: 220px;
 }
 
 .footer-text__three a {
