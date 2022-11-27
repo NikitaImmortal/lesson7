@@ -102,13 +102,10 @@ li {
     margin-bottom: 135px;
 }
 
-
-.header-start {
-    width: 578px;
-}
-
 .header-start__title {
     font-size: 27px;
+    width: 578px;
+    margin-bottom: 73px;
 
 }
 
@@ -119,7 +116,7 @@ li {
     font-size: 13px;
     max-width: 218px;
     width: 100%;
-    margin-top: 73px;
+    
     color: #fff;
     background: linear-gradient(#4A7DFC -20%, #1148D3 120%);
     border: 1px solid #fff;
@@ -129,11 +126,12 @@ li {
 
 }
 
-.header-button__callme a {
+.header-button__call-me a {
     color: #fff;
     text-decoration: none;
 
 }
+
 .btn:hover {
     text-decoration: underline;
     border: 1px solid #1148D3;
@@ -141,11 +139,12 @@ li {
     /* border-bottom: 1px solid #1148D3; */
 }
 
-.header-check {
-    cursor: pointer;
-}
 
-.header-check__title:hover {}
+.header-check__title{
+margin-top: 173px;
+cursor: pointer;
+    
+}
 
 /* Вторая секция */
 
@@ -153,6 +152,7 @@ li {
     padding: 130px 0 72px;
 
 }
+
 .me-section__aboutme {}
 
 .me-section__aboutme-title {
@@ -167,16 +167,15 @@ li {
     width: 669px;
 }
 
-.me-section__title {
+.me-section-content__title {
     position: relative;
     padding-bottom: 14px;
 }
 
-.me-section__title::before {
+.me-section-content__title:before {
     content: "";
     border-bottom: 2px solid #2D63EB;
     width: 117px;
-    display: inline-block;
     position: absolute;
     bottom: 0;
     left: -22px;
@@ -190,24 +189,34 @@ li {
 
 .me-section_text {
     width: 669px;
+    margin-top: 58px;
 
 }
 
-.me-section_text1 {
-    margin-top: 58px;
+.me-section_text p {
+    font-size: 15px;
+
+}
+.me-section_text > :not(:last-child) {
     padding-bottom: 28px;
+}
+
+/* .me-section_text1 {
+    margin-top: 58px;
+    
     font-size: 15px;
 
 }
 
 .me-section_text2 {
     font-size: 15px;
-}
+} */
 
 .colortext {
     color: #2D63EB;
     text-decoration-line: underline;
 }
+
 /* Секция Истории */
 .me-section__history {
     max-width: 263px;
@@ -224,7 +233,8 @@ li {
     margin-top: 45px;
 
 }
-.me-section__history-icon {
+
+.me-section__history-icon  {
     display: flex;
     gap: 1rem;
     margin-bottom: 20px;
@@ -300,13 +310,17 @@ li {
     text-align: center;
     margin-bottom: 55px;
 
-
 }
 
 .reasons {
-    justify-content: space-between;
-    align-items: center;
     display: flex;
+}
+
+.reason {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .reason__number {
@@ -323,48 +337,17 @@ li {
     margin-inline: auto;
 }
 
-.reason__number:hover {
+.reason:hover .reason__number {
     text-decoration: none;
     border: 1px solid #FFA200;
     cursor: pointer;
     background: #FFA200;
     color: #FFF;
 }
-
-.reason {
-    max-width: 161px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
 .reason__text {
     font-weight: 700;
     font-size: 16px;
 }
-
-.reason2 {
-    max-width: 187px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.reason2__icon {}
-
-.reason3 {
-    max-width: 206px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-.reason3__icon {}
 
 /* 4 секция нижний элемент */
 
@@ -378,7 +361,7 @@ li {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    
+
 }
 
 .ithink-title {
@@ -405,6 +388,7 @@ li {
     cursor: pointer;
 
 }
+
 /* Подвал */
 .footer-section {
     background: #06319E;
@@ -416,44 +400,32 @@ li {
 .footer {
     color: #fff;
     display: flex;
+    justify-content: space-between;
+    text-align: center;
 }
 
 
-.footer-text__one {}
+.footer-text {
+        margin-right: 109px;
+}
 
 
-.footer-text__one a {
+.footer-text a {
     text-decoration: none;
     color: #FFFFFF80;
 }
 
-.footer-text__one a:hover {
+.footer-text a:hover {
     text-decoration: underline;
     color: #FFFFFF80;
 }
 
-.footer-text__two {
-    margin-left: 328px;
-}
-
-.footer-text__two a {
-    text-decoration: none;
-    /* Убираем подчеркивание у ссылок */
-    color: #FFFFFF80;
-
-}
-
-.footer-text__two a:hover {
-    text-decoration: underline;
-    color: #FFFFFF80;
-}
 
 .footer-text__three {
     color: #FFFFFF;
     border-bottom: 1px dashed #fff;
     width: 267px;
-    text-align: center;
-    margin-left: 220px;
+    
 }
 
 .footer-text__three a {
