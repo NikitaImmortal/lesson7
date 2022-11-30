@@ -197,20 +197,10 @@ cursor: pointer;
     font-size: 15px;
 
 }
-.me-section_text > :not(:last-child) {
+.me-section_text  > :not(:last-child) {
     padding-bottom: 28px;
 }
 
-/* .me-section_text1 {
-    margin-top: 58px;
-    
-    font-size: 15px;
-
-}
-
-.me-section_text2 {
-    font-size: 15px;
-} */
 
 .colortext {
     color: #2D63EB;
@@ -229,15 +219,20 @@ cursor: pointer;
 
 .me-section__title {}
 
-.me-section__history-icons {
+.me-section__history-icons  {
     margin-top: 45px;
+    
 
 }
 
-.me-section__history-icon  {
+.me-section__history-icons > :not(:last-child) {
+    padding-bottom: 20px;
+}
+
+.me-section__history-icon   {
     display: flex;
     gap: 1rem;
-    margin-bottom: 20px;
+    
 }
 
 .me-section__history-picture1 {
@@ -249,13 +244,17 @@ cursor: pointer;
 }
 
 
-.me-section__history-icontitlestexts {
-
+.me-section__history-icontitlestexts    {
     width: 195px;
-
 }
 
-.me-section__history-title {
+.me-section__history-icontitlestexts p {
+    color: #2F383B7A;
+    font-size: 15px;
+    margin-top: 8px;
+}
+
+.me-section__history-title  {
     font-weight: 700;
     font-size: 16px;
     color: #2D63EB;
@@ -264,9 +263,7 @@ cursor: pointer;
 }
 
 .me-section__history-text {
-    color: #2F383B7A;
-    font-size: 15px;
-    margin-top: 8px;
+    
 
 }
 
@@ -406,11 +403,12 @@ cursor: pointer;
 
 
 .footer-text {
-        margin-right: 109px;
+    margin-left: 50px;
 }
 
 
-.footer-text a {
+
+ a {
     text-decoration: none;
     color: #FFFFFF80;
 }
@@ -425,18 +423,15 @@ cursor: pointer;
     color: #FFFFFF;
     border-bottom: 1px dashed #fff;
     width: 267px;
-    
 }
 
 .footer-text__three a {
     text-decoration: none;
-    /* Убираем подчеркивание у ссылок */
     color: #FFF;
 }
 
 .footer-text__three a:hover {
     text-decoration: underline;
     color: #FFFF;
-    /* Цвет ссылки */
-    /* Добавляем подчеркивание при наведении курсора мыши на ссылку */
+
 }
