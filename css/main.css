@@ -14,7 +14,12 @@ body {
     color: #000000;
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
+}
 
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 .container {
@@ -58,6 +63,7 @@ li {
     display: block;
     padding: 0;
     margin: 0;
+    list-style-type: none;
 }
 
 .btn {
@@ -158,7 +164,6 @@ cursor: pointer;
 .me-section__aboutme-title {
     font-size: 26px;
     text-align: center;
-    /* margin-top: 130px; */
     margin-bottom: 141px;
 
 }
@@ -433,5 +438,128 @@ cursor: pointer;
 .footer-text__three a:hover {
     text-decoration: underline;
     color: #FFFF;
+}
 
+          /* MEDIA QUERiES */
+   
+/* 992-1200 */
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 900px;
+    }
+    
+   
+
+}
+
+/* 768-992 */
+@media screen and (max-width: 992px) {
+    .container {
+        width: 700px;
+    }
+    .me-section__mission {
+        width: 50%;
+    }
+    .me-section_text {
+        width:100%;
+    }
+    .me-section__history {
+        width: 50%;
+    }
+    .me-section__history-icons {
+        margin-top: 70px;
+    }
+                               
+}
+
+/* 576-768 */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 520px;
+    }
+    .header-start__title {
+        font-size: 22px;
+    }
+    .me-section {
+        padding: 50px 0 40px;
+    }
+    .me-section__aboutme-title {
+        margin-bottom: 70px;
+    }
+    .header-check__title {
+        margin-top: 130px;
+    }
+    .me-section-content__title  {
+        margin-left: 30px;
+    }
+    .me-section__history-icons > :not(:last-child) {
+        padding-bottom: 35px;
+    }
+    .me-section__history-icons {
+        margin-left: 30px;
+    }
+    .whyme-section {
+        padding: 40px 0 40px;
+    }
+    .reason__text {
+        font-size: 12px;
+    }
+    .ithink-section {
+        padding: 40px 0 40px;
+    }
+    .footer-text {
+        margin-left: 40px;
+    }
+}
+
+/* 320-576 */
+@media screen and (max-width: 576px) {
+    .container {
+        width: 90%;
+    }
+    .header-logo {
+        margin-bottom: 50px;
+    }
+    .header-start__title {
+        width: 80%;
+        font-size: 17px;
+        margin-bottom: 50px;
+    }
+    .header-button__call-me btn {
+    font-size: 14px;
+    padding: 13px 0 13px;
+    }
+    .header-check__title {
+        margin-top: 91px;
+    }
+    .me-section__wrap {
+        flex-direction: column;
+    }
+    .me-section__mission {
+        width: 100%;
+    }
+    .me-section__history {
+        width: 100%;
+    }
+    .reasons {
+        flex-direction: column;
+    }
+    .whyme__title {
+        margin-bottom: 15px;
+    }
+    .ithink-text {
+        width: 90%;
+    }
+    .footer-section {
+        padding: 26px 0 26px;
+    }
+    .footer-text {
+        font-size: 12px;
+        margin-left: 23px;
+    }
+    .footer-text__three {
+        font-size: 12px;
+        margin-left: 18px;
+    }
 }
